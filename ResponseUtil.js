@@ -7,4 +7,9 @@ module.exports = class ResponseUtil{
       msg
     }));
   }
+
+  static sendSuccess(req, res) {
+    res.setHeader('content-type', 'application/json');
+    res.send(JSON.stringify(req.body));
+  }
 }

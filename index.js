@@ -57,8 +57,7 @@ app.post('/', (req, res) => {
     .calculateEqualShares()
     .calculateOweAmount();
 
-  res.setHeader('content-type', 'application/json');
-  res.send(JSON.stringify(req.body));
+  ResponseUtil.sendSuccess(req,res);
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
