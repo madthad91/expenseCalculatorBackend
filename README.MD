@@ -1,5 +1,9 @@
 #Thad Itrellis Backend Trip Calculator
 
+##Hosting Considerations
+
+Hosted on Heroku @ https://polar-cliffs-76536.herokuapp.com and it's free tier, so waking up from sleep takes about 5-7 seconds
+
 ##Setup the project for local development
 
 ```
