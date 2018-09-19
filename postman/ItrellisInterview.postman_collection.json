@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "8855b191-73aa-449b-8dd5-d082cf97b5db",
+		"name": "ItrellisInterview",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "prod calculator",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"expenseTripRecord\": [{\n\t\t\t\"fullName\": \"Louis\",\n\t\t\t\"expenses\": [5.75, 35.00, 12.79]\n\t\t}, {\n\t\t\t\"fullName\": \"Carter\",\n\t\t\t\"expenses\": [12.00, 15.00, 23.23]\n\t\t}, {\n\t\t\t\"fullName\": \"David\",\n\t\t\t\"expenses\": [10.00, 20.00, 38.41, 45.00]\n\t\t}]\n}"
+				},
+				"url": {
+					"raw": "localhost:3000",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"expenseTripRecord\": [{\n\t\t\t\"fullName\": \"Louis\",\n\t\t\t\"expenses\": [5.75, 35.00, 12.79]\n\t\t}, {\n\t\t\t\"fullName\": \"Carter\",\n\t\t\t\"expenses\": [12.00, 15.00, 23.23]\n\t\t}, {\n\t\t\t\"fullName\": \"David\",\n\t\t\t\"expenses\": [10.00, 20.00, 38.41, 45.00]\n\t\t}]\n}"
+				},
+				"url": {
+					"raw": "localhost:8080",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bad HTTP Verb",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"expenseTripRecord\": [{\n\t\t\t\"fullName\": \"Louis\",\n\t\t\t\"expenses\": [5.75, 35.00, 12.79]\n\t\t}, {\n\t\t\t\"fullName\": \"Carter\",\n\t\t\t\"expenses\": [12.00, 15.00, 23.23]\n\t\t}, {\n\t\t\t\"fullName\": \"David\",\n\t\t\t\"expenses\": [10.00, 20.00, 38.41, 45.00]\n\t\t}]\n}"
+				},
+				"url": {
+					"raw": "localhost:3000",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		}
+	]
+}
